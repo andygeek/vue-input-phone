@@ -1,4 +1,4 @@
-import InputPhone from './components/InputPhone.vue'
+import InputPhone from './InputPhone.vue'
 
 const plugin = {
   install (Vue, options) {
