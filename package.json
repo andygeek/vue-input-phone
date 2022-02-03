@@ -1,11 +1,11 @@
 {
   "name": "vue-input-phone",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "private": false,
   "author": "AndyGeek <andygeek.developer@gmail.com>",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --target lib src/main.ts",
+    "build": "vue-cli-service build --target lib src/main.js",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint"
   },
