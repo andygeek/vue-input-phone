@@ -1,8 +1,11 @@
-import Vue from 'vue'
-import App from './App.vue'
+import InputPhone from './components/InputPhone.vue'
 
-Vue.config.productionTip = false
+const plugin = {
+  install: Vue => {
+    Vue.component(InputPhone.name, InputPhone)
+  }
+}
 
-new Vue({
-  render: h => h(App),
-}).$mount('#app')
+InputPhone.install = plugin.install
+
+export default InputPhone
