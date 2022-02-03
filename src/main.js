@@ -1,10 +1,12 @@
 import InputPhone from './InputPhone.vue'
 
-const plugin = {
+const VueInputPhone = {
   install (Vue, options) {
     Vue.component(InputPhone.name, InputPhone)
   }
 }
-InputPhone.install = plugin.install
+export default VueInputPhone
 
-export default InputPhone
+if (typeof window !== 'undefined' && window.Vue) {
+  window.Vue.use(VueInputPhone)
+}

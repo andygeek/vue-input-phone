@@ -4781,13 +4781,16 @@ var component = normalizeComponent(
 // CONCATENATED MODULE: ./src/main.js
 
 
-var main_plugin = {
+var VueInputPhone = {
   install: function install(Vue, options) {
     Vue.component(src_InputPhone.name, src_InputPhone);
   }
 };
-src_InputPhone.install = main_plugin.install;
-/* harmony default export */ var main = (src_InputPhone);
+/* harmony default export */ var main = (VueInputPhone);
+
+if (typeof window !== 'undefined' && window.Vue) {
+  window.Vue.use(VueInputPhone);
+}
 // CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js
 
 
